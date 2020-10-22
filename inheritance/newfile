@@ -1,0 +1,38 @@
+Polymorphism
+1)method overloading => compile time
+2)method overriding => run time
+
+class summation
+{
+add()
+{
+}
+add(int,int)
+{
+}
+add(double,double)
+{
+}
+add(string,string)
+{
+}
+}
+---------------------
+class a // super
+{
+add() // method specific
+{
+}
+}
+class b extends a //sub
+{
+add() // specific
+{
+}
+}
+
+super ===> super class info will be accesses
+
+----> super.variablename;
+----> super();(or) super(parameter)
+-----> super.methodname();

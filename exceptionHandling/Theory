@@ -1,0 +1,105 @@
+Unit III
+Exception Handling  
+ 
+--> abnormal => 
+
+i/p => process => o/p
+
+Normal Statements  eg. int i=10;
+Critical Statament   int i=j/k; 10/2
+                     int a[]=new int[3];
+                     a[2]=10;
+
+Object
+Throwable
+Exception
+--> Checked Exception => compile time
+                     ---> ColneNotSupportedException
+                     ---->classNotFoundException
+                     ---->I/OException
+                     ---->SQLException
+                     ---->RemoteException
+--> Unchecked Exception=> Runtime
+                     --->ArithemticException
+                     --->ArrayIndexOutOfBoundsException
+                     --->NullPointerException
+                     --->NumberFormatException
+                     --->StringIndexOutOfBoundsException
+
+--> error => h/w, power failure, virtual m/c
+
+keywords : try,catch,throw,throws,finally
+
+Program: 
+get i/p through command prompt
+a,b => add
+--> NumberFormatException
+--> ArrayoutofboundsException
+
+finally ---> block
+Resource
+open()
+close()
+
+n/w=> open connection,close connection
+
+sql-->
+
+Nested try block
+try{
+try
+{
+}
+catch()
+{
+}
+}
+catch()
+{
+}
+final            finally           finalize()
+keyword          block             method => garbage collection
+
+throw => explicitly throwing exception
+==> user defined /custom exception
+throw new Exceptiontype("");  -> error
+throw new ArithmeticException();
+if it wants to be get handled
+try
+{
+throw new Exceptiontype("");
+}
+catch() // handle error[error handling code]
+{
+}
+
+returntype methodname () throws IOException,SQLException
+{
+}
+
+User defined Exception/ custom Exception
+
+class LimitException extends Exception
+{
+String message;
+LimitException(String msg)
+{
+message = msg; // super(msg) => super class constructor
+}
+public String toString()
+{
+return message;
+}
+}
+
+
+if(condition)
+LimitException obj=new LimitException("exceeding limit");
+throw obj;
+
+time limit
+
+i/p --> 12:50
+---> 
+---> check --> 0 to 24
+---> 0 to 60
